@@ -27,9 +27,19 @@ func _physics_process(delta: float) -> void:
 	
 	get_input()
 	apply_gravity(delta)
-
+	animate()
+	
+	
 	if direction_x:
 		velocity.x = direction_x * speed
+	else:
+		velocity.x = 0
 		
 	move_and_slide()
+	
+	
+func animate():
+		$AnimationPlayer.current_animation = "run" 	if direction_x else "idle"
+		$Legs.flip_h = direction_x < 0		
+	
 	
