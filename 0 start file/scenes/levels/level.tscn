@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ed60lwykumhf" path="res://scenes/entities/player.tscn" id="1_377w7"]
 [ext_resource type="Script" uid="uid://dsqbwxwg7wwh6" path="res://scenes/levels/level.gd" id="1_bovvr"]
+[ext_resource type="Texture2D" uid="uid://umouuttstq53" path="res://icon.svg" id="2_b2cq8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ftxyw"]
 size = Vector2(506, 308)
@@ -15,10 +16,15 @@ script = ExtResource("1_bovvr")
 position = Vector2(319, 272)
 shape = SubResource("RectangleShape2D_ftxyw")
 
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1591432466]
+position = Vector2(223.5, 243.5)
+scale = Vector2(2.4453127, 1.9609376)
+texture = ExtResource("2_b2cq8")
+
 [node name="Entities" type="Node2D" parent="." unique_id=90902070]
 
 [node name="Player" parent="Entities" unique_id=791183499 instance=ExtResource("1_377w7")]
-position = Vector2(140, 43)
+position = Vector2(149, 88)
 speed = 100
 
 [node name="Bullets" type="Node2D" parent="." unique_id=957530638]
