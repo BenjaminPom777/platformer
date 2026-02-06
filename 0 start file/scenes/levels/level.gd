@@ -9,3 +9,4 @@ func _on_player_shoot(pos: Vector2, dir: Vector2) -> void:
 
 	$Bullets.add_child(bullet)
 	
+	print(bullet)
