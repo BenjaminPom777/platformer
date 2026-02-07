@@ -82,6 +82,7 @@ _data = {
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_ucweq")
+speed = 200
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1277581763]
 shape = SubResource("CapsuleShape2D_0qees")
@@ -93,6 +94,8 @@ one_shot = true
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2110534407]
 zoom = Vector2(3, 3)
 limit_left = -97
+limit_top = -30
+limit_right = 2790
 limit_bottom = 960
 
 [node name="Legs" type="Sprite2D" parent="." unique_id=359945663]

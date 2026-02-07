@@ -3761,8 +3761,7 @@ tile_set = SubResource("TileSet_ouxo3")
 [node name="Entities" type="Node2D" parent="." unique_id=1296950564]
 
 [node name="Player" parent="Entities" unique_id=1316611704 instance=ExtResource("1_377w7")]
-position = Vector2(136, 39)
-speed = 100
+position = Vector2(151, 24)
 
 [node name="Bullets" type="Node2D" parent="." unique_id=761394847]
 
