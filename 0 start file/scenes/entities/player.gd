@@ -61,6 +61,9 @@ func _physics_process(delta: float) -> void:
 #	moving
 	if direction_x:
 		velocity.x = direction_x * speed
+		print('direction_x: ',direction_x)
+		print('velocity.x ',velocity.x)
+		print('speed: ',speed)
 #	not moving
 	else:
 		velocity.x = 0

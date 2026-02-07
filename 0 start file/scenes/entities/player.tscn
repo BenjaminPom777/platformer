@@ -92,6 +92,8 @@ one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2110534407]
 zoom = Vector2(3, 3)
+limit_left = -97
+limit_bottom = 960
 
 [node name="Legs" type="Sprite2D" parent="." unique_id=359945663]
 position = Vector2(0, -7.9999995)
