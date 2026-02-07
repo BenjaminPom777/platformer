@@ -6,8 +6,6 @@ class_name Bullet
 var direction: Vector2 
 		
 func setup(pos: Vector2, dir: Vector2):
-	print ('pos: ',pos)
-	print ('dir: ',dir)
 
 	position = pos + dir * 16
 	direction = dir
