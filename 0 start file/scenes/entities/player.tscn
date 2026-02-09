@@ -78,6 +78,9 @@ _data = {
 &"run": SubResource("Animation_42nxq")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_1ie0h"]
+radius = 28.76
+
 [node name="Player" type="CharacterBody2D" unique_id=791183499]
 collision_layer = 2
 collision_mask = 5
@@ -119,3 +122,12 @@ vframes = 3
 [node name="Marker" type="Sprite2D" parent="." unique_id=854233319]
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_1ie0h")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1288184308]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=515207536]
+shape = SubResource("CircleShape2D_1ie0h")
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]

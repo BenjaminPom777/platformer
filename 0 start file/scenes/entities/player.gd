@@ -69,3 +69,6 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	
+func _on_hitbox_body_entered(body: Node2D) -> void:
+		$Torso.visible=false
+		$Legs.visible=false
