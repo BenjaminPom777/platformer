@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 var direction_x: float
-@export var speed := 800
+@export var speed := 200
 var is_shooting = true
 @export var jump_strength :=400
 @export var gravity := 1000
@@ -61,9 +61,6 @@ func _physics_process(delta: float) -> void:
 #	moving
 	if direction_x:
 		velocity.x = direction_x * speed
-		print('direction_x: ',direction_x)
-		print('velocity.x ',velocity.x)
-		print('speed: ',speed)
 #	not moving
 	else:
 		velocity.x = 0
