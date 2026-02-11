@@ -5,3 +5,6 @@ func _on_player_shoot(pos: Vector2, dir: Vector2) -> void:
 	var bullet = bullet_scene.instantiate() as Bullet
 	$Bullets.add_child(bullet)
 	bullet.setup(pos, dir)
+
+func _ready() -> void:
+	print(get_tree().get_nodes_in_group('Drones'))
