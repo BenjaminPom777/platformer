@@ -7,6 +7,9 @@ var speed := 50
 var player: CharacterBody2D
 var health := 3
 
+func _ready() -> void:
+	$ExplosionSprite.hide()
+
 func _physics_process(_delta: float) -> void:
 	if player:
 		var dir = (player.position - position).normalized()
@@ -14,7 +17,6 @@ func _physics_process(_delta: float) -> void:
 		$AnimatedSprite2D.flip_h = dir.x > 0 
 		move_and_slide()
 		
-
 
 		
 func _on_detection_area_body_entered(player_body: CharacterBody2D) -> void:
