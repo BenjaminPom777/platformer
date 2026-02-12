@@ -7,4 +7,7 @@ func _on_player_shoot(pos: Vector2, dir: Vector2) -> void:
 	bullet.setup(pos, dir)
 
 func _ready() -> void:
-	print(get_tree().get_nodes_in_group('Drones'))
+	var light_tween = create_tween()
+	light_tween.set_loops()
+	light_tween.tween_property($PointLight2D4,'energy', 1.5, 0.5)
+	light_tween.tween_property($PointLight2D4,'energy', 0.5, 0.5)

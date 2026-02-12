@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+class_name Drone
+
 var direction: Vector2
 var speed := 50
 var player: CharacterBody2D
@@ -27,8 +29,16 @@ func explode():
 	$AnimatedSprite2D.hide()
 	$ExplosionSprite.show()
 	$AnimationPlayer.play("explode")	
+	
 	await $AnimationPlayer.animation_finished
+	
 	queue_free()
+	
+func chain_reaction():
+	for drone in get_tree().get_nodes_in_group('Drones') as Array[Drone]:
+		var distance = position.distance_to(drone.position)
+		if distance <= 50:
+			drone.explode()			
 
 func _on_collision_area_body_entered(_player_body: CharacterBody2D) -> void:
 	explode()
