@@ -3774,6 +3774,48 @@ position = Vector2(421, 161)
 [node name="Drone" parent="Entities" unique_id=897342956 instance=ExtResource("5_urvlt")]
 position = Vector2(791, 79)
 
+[node name="Drone2" parent="Entities" unique_id=816743067 instance=ExtResource("5_urvlt")]
+position = Vector2(600, 200)
+
+[node name="Drone3" parent="Entities" unique_id=1828233808 instance=ExtResource("5_urvlt")]
+position = Vector2(900, 150)
+
+[node name="Drone4" parent="Entities" unique_id=1231113682 instance=ExtResource("5_urvlt")]
+position = Vector2(1100, 300)
+
+[node name="Drone5" parent="Entities" unique_id=2098642897 instance=ExtResource("5_urvlt")]
+position = Vector2(1300, 100)
+
+[node name="Drone6" parent="Entities" unique_id=524654723 instance=ExtResource("5_urvlt")]
+position = Vector2(1500, 400)
+
+[node name="Drone7" parent="Entities" unique_id=439785330 instance=ExtResource("5_urvlt")]
+position = Vector2(1700, 200)
+
+[node name="Drone8" parent="Entities" unique_id=960892718 instance=ExtResource("5_urvlt")]
+position = Vector2(1900, 500)
+
+[node name="Drone9" parent="Entities" unique_id=1385845326 instance=ExtResource("5_urvlt")]
+position = Vector2(2100, 100)
+
+[node name="Drone10" parent="Entities" unique_id=327361677 instance=ExtResource("5_urvlt")]
+position = Vector2(2300, 350)
+
+[node name="Drone11" parent="Entities" unique_id=1025592913 instance=ExtResource("5_urvlt")]
+position = Vector2(2500, 150)
+
+[node name="Drone12" parent="Entities" unique_id=1318723458 instance=ExtResource("5_urvlt")]
+position = Vector2(2700, 300)
+
+[node name="Drone13" parent="Entities" unique_id=995516740 instance=ExtResource("5_urvlt")]
+position = Vector2(1200, 600)
+
+[node name="Drone14" parent="Entities" unique_id=1010614771 instance=ExtResource("5_urvlt")]
+position = Vector2(1800, 600)
+
+[node name="Drone15" parent="Entities" unique_id=2029743027 instance=ExtResource("5_urvlt")]
+position = Vector2(2400, 600)
+
 [node name="Bullets" type="Node2D" parent="." unique_id=761394847]
 metadata/_edit_lock_ = true
 

@@ -6,6 +6,7 @@ var direction: Vector2
 var speed := 50
 var player: CharacterBody2D
 var health := 3
+var exploded := false
 
 func _ready() -> void:
 	$ExplosionSprite.hide()
@@ -27,7 +28,12 @@ func _on_detection_area_body_exited(_bplayer_body: CharacterBody2D) -> void:
 	player = null
 
 func explode():
+	if exploded:
+		return
+	exploded = true
+	
 	speed = 0
+	$CollisionShape2D.set_deferred("disabled", true)
 	$AnimatedSprite2D.hide()
 	$ExplosionSprite.show()
 	$AnimationPlayer.play("explode")	
