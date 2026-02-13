@@ -3772,19 +3772,7 @@ tile_set = SubResource("TileSet_ouxo3")
 position = Vector2(421, 161)
 
 [node name="Drone" parent="Entities" unique_id=897342956 instance=ExtResource("5_urvlt")]
-position = Vector2(1029, 91)
-
-[node name="Drone2" parent="Entities" unique_id=1724268628 instance=ExtResource("5_urvlt")]
-position = Vector2(917, 77)
-
-[node name="Drone3" parent="Entities" unique_id=216347963 instance=ExtResource("5_urvlt")]
-position = Vector2(820, 52)
-
-[node name="Drone4" parent="Entities" unique_id=1357293499 instance=ExtResource("5_urvlt")]
-position = Vector2(799, 46)
-
-[node name="Drone5" parent="Entities" unique_id=926166673 instance=ExtResource("5_urvlt")]
-position = Vector2(709, 50)
+position = Vector2(791, 79)
 
 [node name="Bullets" type="Node2D" parent="." unique_id=761394847]
 metadata/_edit_lock_ = true

@@ -46,7 +46,12 @@ func _on_collision_area_body_entered(_player_body: CharacterBody2D) -> void:
 	explode()
 
 
+	
 func hit():
+	var tween = create_tween()
+	tween.tween_property($AnimatedSprite2D.material, 'shader_parameter/Progress', 0.1, 0.5)
+	tween.tween_property($AnimatedSprite2D.material, 'shader_parameter/Progress', 1, 0.5)
+	
 	health -= 1
 	if health <=0:
 		explode()
