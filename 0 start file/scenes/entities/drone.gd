@@ -31,7 +31,7 @@ func explode():
 	$AnimatedSprite2D.hide()
 	$ExplosionSprite.show()
 	$AnimationPlayer.play("explode")	
-	
+	$AudioStreamPlayer2D.play()
 	await $AnimationPlayer.animation_finished
 	
 	queue_free()
@@ -39,7 +39,7 @@ func explode():
 func chain_reaction():
 	for drone in get_tree().get_nodes_in_group('Drones') as Array[Drone]:
 		var distance = position.distance_to(drone.position)
-		if distance <= 50:
+		if distance <= 50 && drone != self:
 			drone.explode()			
 
 func _on_collision_area_body_entered(_player_body: CharacterBody2D) -> void:
